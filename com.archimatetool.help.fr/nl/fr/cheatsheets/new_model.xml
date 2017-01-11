@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cheatsheet
+      title="Cr&eacute;er un nouveau mod&egrave;le">
+   <intro>
+      <description>
+         Ce pense-b&egrave;te est une description pas à pas de la façon de cr&eacute;er un mod&egrave;le Archimate basique.
+      </description>
+   </intro>
+   <item
+         skip="false"
+         title="Ouvrir l'arborescence du mod&egrave;le">
+      <description>
+         De façon à voir le mod&egrave;le dans l'arborescence des mod&egrave;les, assurez-vous que la fen&egrave;tre de l'arborescence des mod&egrave;les est visible.
+      </description>
+      <action
+      		required="false"
+      		pluginId="com.archimatetool.help"
+      		class="com.archimatetool.help.cheatsheets.ShowViewCheatSheetAction" 
+            param1="com.archimatetool.editor.treeModelView"/>
+            
+   </item>
+   <item
+         title="Ajouter un nouveau mod&egrave;le">
+      <description>
+         Ajoutez un nouveau mod&egrave;le en cliquant sur le bouton <b>&quot;Nouveau mod&egrave;le vide&quot;</b> ou en faisant un clic droit dans la fen&egrave;tre de l'arborescence des mod&egrave;les et en choisissant <b>&quot;Nouveau mod&egrave;le vide&quot;</b>.
+      </description>
+      <action
+      		required="false"
+      		pluginId="com.archimatetool.editor"
+      		class="com.archimatetool.editor.actions.NewArchimateModelAction"/>
+   </item>
+   <item
+         title="Ajouter des &eacute;l&eacute;ments au mod&egrave;le">
+      <description>
+         Vous devriez maintenant voir la structure de r&eacute;pertoires de base de votre mod&egrave;le dans l'arborescence des mod&egrave;les. De m&egrave;me, vous devriez constater que la <b>fen&egrave;tre du diagramme du mod&egrave;le</b> est ouverte. C'est dans cette fen&egrave;tre que vous pourrez construire graphiquement votre mod&egrave;le en y glissant-d&eacute;posant des &eacute;l&eacute;ments et des connexions depuis la palette.
+<br/><br/>
+Vous pouvez &eacute;galement ajouter des &eacute;l&eacute;ments directement à l'arborescence du mod&egrave;le en faisant un clic droit sur un dossier et en choisissant l'entr&eacute;e de menu <b>&quot;Nouveau&quot;</b>. Une fois ajout&eacute;s, les &eacute;l&eacute;ments peuvent &egrave;tre tir&eacute;s deouis l'arborescence vers le diagramme.
+      </description>
+   </item>
+</cheatsheet>

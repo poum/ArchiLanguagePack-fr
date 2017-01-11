@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cheatsheet
+      title="Cr&eacute;er une vue carte">
+   <intro>
+      <description>
+         Ce pense-b&ecirc;te vous explique comment cr&eacute;er une vue cartographique de vos vues existantes. Une vue carte contient des rectangles qui sont des raccourcis qui ouvrent la vue correspondante quand on clique dessus.</br>
+<br/>
+Vous pouvez les cr&eacute;er manuellement en glissant-d&eacute;posant une vue de l&apos;arborescence vers une vue diagramme ouverte.</br>
+<br/>
+Ce pense-b&ecirc;te peut en cr&eacute;er une pour vous automatiquement si, ayant ouvert la vue de l&apos;arborescence des mod&egrave;les, que vous avez choisi un mod&egrave;le Archimate dans cette vue et que ce mod&egrave;le contient plusieurs vues.
+      </description>
+   </intro>
+   <item
+         skip="true"
+         title="Ouvrir l&apos;arborescence des mod&egrave;les">
+      <description>
+         D&apos;abord, vous devez vous assurer que l&apos;arborescence des mod&egrave;les est ouverte. Vous pouvez soit le faire manuellement grâce au menu principal <b>Fen&ecirc;tre &gt; mod&egrave;les</b> ou automatiquement depuis ce pense-b&ecirc;te.
+      </description>
+      <action
+      		required="false"
+      		pluginId="com.archimatetool.help"
+      		class="com.archimatetool.help.cheatsheets.ShowViewCheatSheetAction" 
+            param1="com.archimatetool.editor.treeModelView"/>
+            
+   </item>
+   <item
+         title="Cr&eacute;er la vue carte">
+      <description>
+         Cr&eacute;ez automatiquement une nouvelle vue carte ici. <b>Assurez-vous qu&apos;un mod&egrave;le a &eacute;t&eacute; choisi dans l&apos;arborescence des mod&egrave;le et qu&apos;il poss&egrave;de plusieurs vues.</b>
+      </description>
+      <action
+      		required="false"
+      		pluginId="com.archimatetool.help"
+      		class="com.archimatetool.help.cheatsheets.CreateMapViewCheatSheetAction"/>
+   </item>
+   <item
+         title="C&apos;est fait !">
+      <description>
+         Ca y est. C&apos;est fait !
+      </description>
+   </item>
+</cheatsheet>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Canvas Modelling Toolkit - Getting into the Details</title>
+<link href="../Styles/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <h2>Entrer dans les détails</h2>
+    <p>Les composants et les concepts principaux qui constituent un canevas sont les blocs, les magnets, les images, les connexions, les astuces et les verrous. Un modèle de canevas comporte typiquement un certain nombre de blocs (verrouillés) et des images sur lesquels les utilisateurs peuvent ajouter des magnets, des images, des connexions et d'autres blocs si nécessaire. Les sections suivantes décriront chacun de ces concepts en détail en commençant par une description de la palette du canevas et par un exemple de construction d'un canevas fictif.</p>
+    
+    <p>&nbsp;</p>
+    
+    <h3>La palette du canevas</h3>
+    <p>Quand on travaille avec un canevas, la palette vous propose les outils dont vous avez besoin pour créer ces éléments.</p>
+    
+    <img src="../Images/canvas_palette.png" alt="canvas" />
+    <p class="caption">La palette du canevas</p>
+   
+    <p>Choisissez un outil dans la palette et tirez-le dans le canevas. Les rectangles colorés représentent des  "Magnets". Notez que vous n'êtes pas limité aux couleurs fournies et que vous pouvez modifier la couleur de votre magnet dans la <a href="properties_canvas_sticky.html">fenêtre des prprpiétés</a>. De la même façon, vous pouvez modifier le type de trait et de la pointe de la flèche dans la  <a href="properties_canvas_connection.html">fenêtre des propriétés</a>.</p>
+    
+    <p>&nbsp;</p>
+   
+    <h3>Construire un nouveau canevas - un exemple</h3> 
+    <p>Suivons le processus de construction d'un cavenas destiné à cartographier des concepts passés, présents et futurs.</p>
+    <p>Supposons que vous avez choisi un modèle dans l'arborescence des modèles, suivez ces trois étapes:</p> 
+    
+    <ol>
+      <li>Faites un clic droit sur le répertoire "Vues" de votre modèle dans l'arborescence des modèles puis choisissez "Nouveau-&gt;Canevas vierge":</br>
+        <br/>
+        <img src="../Images/canvas_new_blank.png" alt="canvas" /><br/>
+        <br/>
+      </li>
+      <li>La vue du canevas vierge va s'ouvrir automatiquement. Vous pouvez la renommer dès maintenant dans l'arborescence des modèles si vous le souhaitez.</li>
+      <li>À partir de la palette, choisissez l'outil bloc et dessinez un grand bloc rectangulaire sur le canevas. Modifiez le texte qu'il contieent en cliquant dessus et saisissez "Passé":</br/>
+        <br/>
+        <img src="../Images/canvas_example1.png" alt="canvas" /><br/>
+        <br/>
+      </li>
+     <li>Créez deux blocs de plus respectivement appelés "Présent" et "Futur" en les ajoutant au canevas de telle sorte qu'ils soient alignés comme suit:<br/>
+        <br/>
+        <img src="../Images/canvas_example2.png" alt="canvas" /><br/>
+        <br/>
+      </li>
+      <li>Now let's add some icons to these Blocks to make them visually more appealing. Double-click on the first Block to open the Properties Window. In the Properties Window select the "Image" tab. Then select the "Choose..." drop-down box and the "Set Image..." item:<br/>
+        <br/>
+        <img src="../Images/canvas_example3.png" alt="canvas" /><br/>
+        <br/>
+        When the "My Images" Image Manager dialog window opens, select the "Open from File..." option and choose an appropriate image from your computer's file system. Do the same for the other Blocks.<br/>
+        <br/>
+      </li>
+      <li>Here's how it looks so far with the  images that we have selected for the three Blocks:<br/>
+        <br/>
+        <img src="../Images/canvas_example4.png" alt="canvas" /><br/>
+        <br/>
+      </li>
+      <li>  Now that we have constructed our three main Blocks we could take this opportunity to change their background colour, their text fonts and  positions in the Properties Window. But for now let's add an Image underneath the Blocks. From the Palette select the Image tool and draw a  rectangular Image place-holder on the Canvas right underneath the Blocks. Double-click on the Image place-holder to open the Properties Window. In the Properties Window on the "Main" tab select the "Choose..." drop-down box and the "Set Image..." item, as you did before for a Block, and select an appropriate image from your computer's file system. Then from the "Appearance" tab set the border to "None". The Canvas now looks like the following:<br/>
+        <br/>
+        <img src="../Images/canvas_example5.png" alt="canvas" /><br/>
+        <br/>
+      </li>
+    </ol>
+    
+    <p><strong>Adding Hints and Locking</strong></p>
+    
+    <p>For the  finishing touches let's add some Hints to the Blocks and then lock them so that we can re-use the Canvas as a Template. Why do we want to add Hints to the Blocks? Well, as with the other elements in Archi models it's extremely helpful to provide a rubric that suggests to the end user the intent of the element and how it can be used in the model. Let's add the hints:</p>
+    
+    <ol>
+      <li>First ensure that the <a href="hints.html">Hints Window</a> is open. You can open it from the main "Window" menu.</li>
+      <li>Double-click on the first Block (the "Past" Block) in order to open the Properties Window.</li>
+      <li>In the Properties Window select the "Hint" tab.</li>
+      <li>Type "Past" for the Hint title, and some text for the Hint Content. Note that you can use HTML to mark up your content text. Here's what it looks like now:<br/>
+        <br/>
+      <img src="../Images/canvas_example6.png" alt="canvas" /><br/>
+      <br/>
+      </li>
+      <li>Add Hints for the other Blocks.</li>
+      <li>Now let's lock all these elements so that we can use the Canvas. Select each Block and the Image in turn. In the Properties Window tick the "Locked" checkbox:<br/>
+        <br/>
+        <img src="../Images/canvas_example7.png" alt="canvas" /><br/>
+      </li>
+    </ol>
+    
+    <p><br/> 
+      Now that we have created the Blocks, added an Image, provided the Hints and locked the elements we can save the whole thing as a Canvas Template and then create new instances of the Canvas from the template. See the sections "<a href="canvas_save_as_template.html">Saving a Canvas as a Template</a>" and 
+    "<a href="canvas_new_from_template.html">Creating a New Canvas from a Template</a>" to do this.</p>
+    <p>Creating a new Canvas instance from the template means we can now start using it for real:</p>
+    <img src="../Images/canvas_example8.png" alt="canvas" />
+    <p class="caption">Our imaginary Canvas</p>
+    
+    <p>For more ideas, look at how the built-in Canvas templates are constructed for further examples. See the section "<a href="canvas_new_from_template.html">Creating a New Canvas from a Template</a>".</p>
+    
+    <p>&nbsp;</p>
+    
+    <p class="boxout"><img src="../Images/tip.png" class="tipImage" alt="tip"/><strong>Archi uses a different file format for "*.archimate" files when adding Canvasses that contain images.</strong><br/>Normally Archi saves "*.archimate" files as single plain text XML format files. However, when images are used in a Canvas the file format used is a binary archive file (zip format) that contains both the model's XML file and any image files. This is to keep all related files together ensuring that you don't have to worry about managing the image files.</p>
+
+    <p>&nbsp;</p>
+
+</body>
+</html>
