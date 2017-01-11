@@ -1,0 +1,39 @@
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+use v5.10.0;
+
+use autodie;
+use Cwd;
+use File::Find;
+use File::Copy qw(copy);
+
+find(\&wanted, cwd );
+
+sub wanted {
+
+  copy($File::Find::name, oldName($File::Find::name))
+    if /.properties$/ and isModified($File::Find::name);
+}
+
+sub isModified {
+  my $file = shift;
+
+  return chksum($file) ne chksum( oldName($file) );
+}
+
+sub oldName {
+  $_ = shift;
+  s/archi\/nls/ArchiLanguagePack-fr/;
+
+  return $_;
+}
+
+
+sub chksum {
+  my $file = shift;
+  
+  return (split /\s/, `shasum $file`)[0];
+}
+
