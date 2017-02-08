@@ -4,88 +4,88 @@
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<title>Importing and Exporting the Model and its Views</title>
+<title>Importer et exporter le modèle et ses vyes</title>
 <link href="../Styles/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 
-    <h1 class="pagebreak">Importing and Exporting the Model and its Views</h1>
-    
-    <p>It is possible to export the Archi model or its Views to different formats in order to re-use the model or images in different applications. Some import formats are also supported.</p>
+    <h1 class="pagebreak">Importer et exporter le modèle et ses vues</h1>
+   
+    <p>Il est possible d'exporter le modèle Archi ou ses vues sous différents formats de façon à réutiliser le modèle ou des images dans différentes applications. Certains formats d'import sont égalements pris en charge.</p> 
     
     <br/>
-    
-    <h2>Export Model To CSV</h2>
-    
-    <p>You can export a model's data to CSV format (Comma Separated Values). The data is exported in three different files - "elements.csv", "relations.csv" and "properties.csv". All data elements are identified by unique identifiers so that a property will reference an element or relation in the other files.</p>
-    <p>This option is available from the "Export Model To  CSV..." menu item from the main "File-&gt;Export" menu. Once a model is selected in the Model Tree or in a View this menu item is enabled.</p>
+   
+    <h2>Exporter le modèle en CSV</h2> 
+   
+    <p>Vous pouvez exporter les données d'un modèle au format CSV (valeurs séparées par des virgules). Les données sont exportées dans trois fichiers différents - "elements.csv", "relations.csv" et "properties.csv" .Tous les éléments de données sont identifiées par des identifiants uniques de telle façon qu'une propriété référencera un élément ou une relation dans d'autres fichiers.</p> 
+    <p>Cette option est accessible via l'élément de menu "Exporter le modème en csv..." dans le menu principal "Fichier-&gt;Export". Une fois qu'un modèle a été choisi dans l'arborescence des modèles ou dans une vue, cet élément de menu devient accessible.</p>
     
     <img src="../Images/csv-export.png" alt="export-csv"/>
-    <p class="caption">Exporting the model to CSV</p>
+    <p class="caption">Exporter le modèle en CSV</p>
     
     <br/>
-    <p>The CSV field format for elements is - "ID", "Type", "Name", "Documentation"</p>
-    <p>The CSV field format for relations is - "ID","Type", "Name", "Documentation", "Source", "Target"</p>
-    <p>The CSV field format for elements is - "ID", "Key", "Value"</p>
+    <p>Le format du champ CSV pour les éléments est: "ID", "Type", "Nom", "Documentation"</p>
+    <p>Le format du champ CSV pour les relations est: "ID", "Type", "Nom", "Documentation", "Source", "Cible"</p>
+    <p>Le format du champ CSV pour les propriétés est: "ID", "Clef", "Valeur"</p>
+   
+    <h3>Options d'export</h3> 
+    <p><strong>Dossier de sortie</strong><br/>
+    Choisissez le dossier dans lequel les fichiers résultats seront produits.</p>
     
-    <h3>Export Options</h3>
-    <p><strong>Output Folder</strong><br/>
-    Select the folder for the output files.</p>
-    
-    <p><strong>Delimiter</strong><br/>
-    Select the CSV field delimiter character - comma, semicolon, or tab.</p>
+    <p><strong>Délimiteur</strong><br/>
+    Choisissez le caractère délimiteur pour les champs CSV: virgule, point-virgule ou tabulation.</p>
 
-    <p><strong>File prefix</strong><br/>
-    Provide an optional prefix to add to the file names. For example, "MyModel-" will change the file names to "MyModel-elements.csv", "MyModel-relations.csv", and "MyModel-properties.csv".</p>
+    <p><strong>Préfixe de fichier</strong><br/>
+    Fournissez le préfixe optionnel à ajouter aux noms de fichiers. Par exemple "MonModele-" modifiera les noms de fichiers en "MonModele-elements.csv", "MonModele-relations.csv" et "MonModele-properties.csv".</p>
 
-    <p><strong>File encoding</strong><br/>
-    Select the file encoding to use - ANSI or UTF-8. Some programs prefer one or the other file encoding.</p>
+    <p><strong>Encodage des fichiers</strong><br/>
+    Choisissez l'encodage de fichier à utiliser: ANSI ou UTF-8. Certains programmes préfèrent l'un ou l'autre de ces encodages de fichier.</p>
 
-    <p><strong>Strip newline characters</strong><br/>
-    If selected will remove all newline characters from multi-line text such as documentation.</p>
+    <p><strong>Supprimer les caractères de fin de ligne</strong><br/>
+    Si cette option est activée, elle supprimera tous les caractères retour chariot des textes sur plusieurs lignes tels que ceux des documentations.</p>
 
-    <p><strong>Use Excel leading zeros/spaces workaround</strong><br/>
-    If selected will surround text starting with a zero or space with a quote marks so that the data imports correctly into Excel.</p>
+    <p><strong>Utiliser le contournement des zéros/espaces d'en-tête Excel</strong><br/>
+    Si cette option est choisiée, elle entourera tout texte commençant par un zéro ou un espace avec des guillements afin que les données soient correctement importées dans Excel.</p>
 
     <br/>
-    
-    <h2>Importing CSV Data into a Model</h2>
-    
-    <p>Conversely you can import CSV data into an existing model. The CSV files need to be in the same format as described above. Element and relationship IDs are optional, but you need to provide an ID for an element if it is referenced by a relationship or property, and to provide an ID for a relationship if it is referenced by a property. If providing an ID then it needs to be unique to the file using alpha-numeric characters, for example - "id1", "8fe456d", "actor3". If an ID is not provided, a blank field "" should be present. In this case, an ID will be generated on import.</p>
-    
-    <p>At the very least, you need to provide a CSV file named "xxx-elements.csv" where the "xxx-" part of the file name is optional. If you also provide a relations file it needs to be in the format described above and named "xxx-relations.csv". If you also provide a properties file it needs to be in the format described above and named "xxx-properties.csv". Again, the "xxx-" part of the file name is optional. All three file names need to match - for example: "myname-elements.csv", "myname-relations.csv" and "myname-properties.csv".</p>
-    
-    <p>The best way to understand the required format is to export an existing model to CSV format, and open the resulting files in a text editor, or spreadsheet application</p>
-    
-    <p><b>When importing the CSV file(s) into Archi make sure that you select the "xxx-elements.csv file in the Import dialog box. If there is a corresponding "xxx-relations.csv" file and/or a corresponding "xxx-properties.csv" file then these file(s) will be automatically imported at the same time.</b></p>
-    
-    <p>It is also possible to merge/update the imported CSV data into an existing model. If a model element already exists as denoted by its ID, and the CSV row entry contains different data to that in the model it is updated. For example, a Business Actor with id "9240f5bf", named "BA1", and no documentation can be updated with a row entry as follows:</p>
+
+    <h2>Importer des données CSV dans un modèle</h2>    
+   
+    <p>Inversement, vous pouvez importer des données CSV dans un modèle existant. Les fichiers CSV doivent être dans le même format que celui décrit ci-dessus. Les identifiants des éléments et des relations sont facultatifs mais vous devez fournir un identifiant pour un élément s'il est référencé par une relation ou une propriété, tout comme vous devez fournir un identifiant pour une relation si elle est référencée par une propriété. Si vous fournissez un identifiant, celui-ci doit être unique dans le fichier et il doit utiliser des caractères alphanumériques, par exemple: "id1", "8fe456d", "acteur3". Si un identifiant n'est pas fourni, un champ vide  "" doit être présent. Dans ce cas, un identifiant sera généré lors de l'import.</p> 
+   
+    <p>A tout le moins, vous devez fournir un fichier CSV appelé "xxx-elements.csv" où la partie du nom de fichier "xxx-" est facultative. Si vous fournissez également un fichier de relations, il doit être dans le format décrit ci-dessus et être appelé "xxx-relations.csv". Si vous fournissez également un fichier de propriétés, il doit être dans le format décrit précédemment et appelé "xxx-properties.csv". De nouveau, la partie du nom de fichier "xxx-" est facultative. Les trois noms de fichiers doivent correspondre: par exemple "monnom-elements.csv", "monnom-relations.csv" et "monnom-properties.csv".</p> 
+   
+    <p>La meilleure façon de comprendre le format requis est d'exporter un modèle existant au format CSV puis d'ouvrir les fichiers résultant à l'aide d'un éditeur de texte ou d'une application de tableur.</p> 
+   
+    <p><b>Quand vous importez un ou des fichiers CSV dans Archi, assurez-vous que vous avez sélectionner le fichier "xxx-elements.csv" dans la boîte de dialogue. S'il existe un fichier correspondant "xxx-relations.csv" et/ou un fichier correspondant "xxx-properties.csv", ce(s) fichier(s) sera/seront automatiquement importés en même temps.</b></p> 
+   
+    <p>Il est également possible de fusionner/mettre à jour des données CSV importées dans un modèle existant. Si un élément du modèle existe déjà, conformément à son identifiant, et que la ligne CSV contient des données différentes de celle contenues dans le modèle, ce dernier sera mis à jour. Par exemple, un acteur métier ayant un identifiant "9240f5bf", est nommé "BA1" et ne possède aucune documentation pourra être mis à jour par une ligne telle que celle qui suit:</p> 
     
     <p style="font-style:italic;">"ID","Type","Name","Documentation"<br/>
-       "9240f5bf","BusinessActor","New Name","Additional Documentation" 
+       "9240f5bf","BusinessActor","Nouveau nom","Documention complémentaire" 
     </p>
-    
-    <p>Note - it is currently not possible to import and export View diagram information in CSV format.</p>
+   
+    <p>Note: il est actuellement impossible d'importer et d'exporter des informations de diagramme de vie au format CSV.</p> 
 
     <br/>
-    
-    <h2>Export View As Image</h2>
-    
-    <p>A View (diagram) can be exported as an image file to disk.  This is available from the "Export View As Image..." menu command from the main  "File-&gt;Export" menu or by right-clicking on a View and selecting the menu  item from the contextual menu. This menu command is only available if a View is open and selected.</p>
-    
-    <p>Available formats are BMP, JPG, PNG, PDF and SVG. The first three formats can be exported at scaled ranging from 25% to 500%. SVG format has more options including embedding font information and setting the viewBox bounds for different scales.</p>
+
+    <h2>Exporter une vue en tant qu'image</h2>    
+   
+    <p>Une vue (diagramme) peut être exportée en tant qu'image sur le disque. Ceci est disponible depuis la commande de menu "Exporter la vue en tant qu'image..." dans le menu principal "Fichier-&gt;Export" ou en faisant un clic droit sur une vue et en choisissant l'élément de menu dans le menu contextuel. Cette commande de menu n'est accessible que si une vue est ouverte et est sélectionnée.</p> 
+   
+    <p>Les formats disponibles sont BPM, JPG, PNG, PDF et SVG. Les trois premiers formats peuvent être exportés semon une échemme allant de 25% à 500%. Le format SVG possède davantage d'options dont l'inclusion de police de caractères et la définition des limites de la oîte de la vue pour différentes échelles.</p> 
     
     <img src="../Images/export_image.png" alt="export-image"/>
-    <p class="caption">Exporting a View as an image</p>
+    <p class="caption">Exporter une vue en tant qu'image</p>
 
     <br/>
+   
+    <h2>Exporter une vue en tant qu'image dans le presse-papier</h2> 
     
-    <h2>Export View As Image to Clipboard</h2>
-    
-    <p><em>Note - this is not implemented on the 64-bit Linux version of Archi due to a bug in Eclipse.</em></p>
-    
-    <p>A View (diagram) can be exported (or copied) as an image to the system clipboard. This is available from the "Export View As Image To Clipboard" menu command from the main "File-&gt;Export" menu or by right-clicking on a View and  selecting the menu item from the contextual menu. This menu command is only  available if a View is open and selected. A useful shortcut key combination is  Ctrl-Shift-C (Command key on Mac). Once the View is exported to the system clipboard it can be  pasted into other applications such as word processing and drawing tools.</p>
+    <p><em>Note - ceci n'est pas implémenté dans la version Linux 64 bits d'Archi à cause d'un bug dans Eclipse.</em></p>
+   
+    <p>Une vue (diagramme) peut être exportée (ou copiée) en tant qu'image dans le presse-papier du système. Ceci est accessible vie la commande de menu "Exporter la vue en tant qu'image dans le presse-papier" du menu principal "Fichier-&gt;Export"  ou en faisant un clic droit sur une vue puis en choisissant l'élément de menu dans le menu contextuel. Cette commande de menu n'est disponible que si une vue est ouverte et sélectionnée. Un raccourci clavier très utile est Ctrl-Shift-C (La touche Command sur Mac). Une fois que la vue est exportée dans le presse-papier, elle peut être copiée dans d'autres applications telles qu'un traitement de texte ou des outils de dessin.</p> 
     
     <p>&nbsp;</p>
 
