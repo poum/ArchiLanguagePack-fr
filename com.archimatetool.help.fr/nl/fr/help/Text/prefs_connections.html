@@ -4,100 +4,100 @@
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<title>Connection Preferences</title>
+<title>Préférences des connexions</title>
 <link href="../Styles/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 
-	<h1 class="pagebreak">Connections Preferences</h1>
+	<h1 class="pagebreak">Préférences des connexions</h1>
 	
 	<br/>
 
-	<h2>Connections</h2>
+	<h2>Connexions</h2>
 	
 	<br/>
 
-	<p class="caption"><img src="../Images/prefs_connections.png"/><br/>Connections Preferences</p>
+	<p class="caption"><img src="../Images/prefs_connections.png"/><br/>Préférences des connexions</p>
 	
 	<br/>
 	
-	<h3>Magic Connector</h3>
-	<p><strong>Show Animation on Undo/Redo</strong><br/>
-	Select this option to enable the "puff" animation when undo/redo is performed for an element drawn with the Magic Connector.</p>
+	<h3>Connecteur magique</h3>
+	<p><strong>Afficher les animations pour Annuler/Refaire</strong><br/>
+  Choisir cette option pour activer l'animation "cosmétique" quand un annuler/refaire est exécuté pour un élément dessiné avec le connecteur magique.</p>
 	
-	<p><strong>Show Elements first (Use the Ctrl/Command key to swap)</strong><br/>
-	When clicking from the Magic Connector onto the empty View canvas show Elements first then Connections in the popup menus. Holding the Ctrl / Command key at the same time will reverse this.</p>
+	<p><strong>Afficher d'abord les éléments (Utiliser la combinaison de touches Ctrl/Command pour inverser le comportement)</strong><br/>
+  Quand on clique sur le connecteur magique dans un canevas vide d'une vue, affiche d'abord les éléments puis les connexions dans les menus surgissants. Appuyer simultanément sur les touches Ctrl / Command inversera ce comportement.</p>
 
-	<p><strong>Show Connections first (Use the Ctrl/Command key to swap)</strong><br/>
-	When clicking from the Magic Connector onto the empty View canvas show Connections first then Elements in the popup menus. Holding the Ctrl/Command key at the same time will reverse this.</p>
+	<p><strong>Afficher d'abord les connexions (Utiliser la combinaison de touches Ctrl/Command pour inverser le comportement)</strong><br/>
+  Quand on clique sur le connecteur magique dans un canevas vide d'une vue, affiche d'abord les connexions puis les éléments dans les menus surgissants. Appuyer simultanément sur les touches Ctrl / Command  inversera ce comportement.</p>
 	
 	<br/>
 	
-	<h2>Drawing</h2>
+	<h2>Dessin</h2>
     
     <p>
-        <strong>Use anti-aliasing on connections</strong>
-        <br/>On Windows and Linux operating systems ensures that connections are drawn more smoothly.
+        <strong>utiliser l'anti-aliasing sur les connexions</strong>
+        <br/>Sur les systèmes d'exploitation Windows et Linux, s'assure que les connexions sont dessinées de manière plus douce.
     </p>
 	
-	<p id="useorthogonalconnectionanchors"><strong>Use orthogonal connection anchors</strong><br/>
-	If this is ticked then a new method to calculate the anchor point for a connection is used (the position where a connection connects to a figure). By default (option not ticked), the anchor point is computed as the intersection of the figure's border and the connection targeting the figure's centre. With this option, the anchor point is computed to make the connection either a vertical or horizontal line (if this not possible, it connects to one of the figure's corners). It is possible to move this anchor point just by moving the figure or by creating a bend point in the connection and moving that.</p>
-	<p>For example if not ticked (default) the connections appear as follows:</p>
+	<p id="useorthogonalconnectionanchors"><strong>Utiliser les ancres de connexion orthogonales</strong><br/>
+  Si ceci est coché alors une nouvelle méthode pour calculer le point d'ancrage d'une connexion sera utilisée (la position où une connexion est attachée à un élément graphique). Par défaut (option non cochée), le point d'ancrage est calculé comme intersection du bord de l'élément graphique et de la connexion visant le centre de ce même élément graphique. Avec cette option, le point d'ancrage est calculé pour faire que la connexion soit une ligne soit verticale soit horizontale (si ceci n'est pas possible, la connexion se fait sur l'un des coins de l'élément graphique). il est possible de déplacer ce point d'ancrage simplement en déplaçant l'élément graphique ou en créeant un point de courbure dans la connexion puis en le déplaçant.</p>
+	<p>Par exemple, si l'option n'est pas cochée (valeur par défaut), la connexion apparaît comme suit:</p>
 	<img src="../Images/orthogonal1.png" alt="Orthogonal 1"/>
 	
 	<br/>
 	
-	<p>If ticked the connections appear as follows:</p>
+	<p>Si l'option est cochée, la connexion apparaît comme suit:</p>
 	
 	<img src="../Images/orthogonal2.png" alt="Orthogonal 2"/>
 	
 	<br/>
 	
 	<p>
-        <strong>Use line curves</strong>
-        <br/>If this is enabled, connections are shown with curves at bend-points.
+        <strong>Utiliser des lignes courbes</strong>
+        <br/>Si ceci est activé, les connexions sont affichées avec des courbes aux points de courbure.
     </p>
 	
 	<p>
-        <strong>Use line jumps for intersecting relations</strong>
-        <br/>If this is enabled, a jump curve is shown when one connection crosses another.
+        <strong>Utiliser des sauts de ligne pour les relations se croisant</strong>
+        <br/>Si ceci est coché, un saut courbe est affiché quand une connexion en croise une autre.
     </p>
 
 	<br/>
 	
-	<h3>Rules</h3>
-	<p><strong>Allow circular connections</strong><br/>
-	Choose to allow connections that start and end with the same element. See <a href="view_addnew.html">here</a> for more information.</p>
+	<h3>Règles</h3>
+	<p><strong>Autoriser les connexions circulaires</strong><br/>
+  Choisir d'autoriser les connexions qui partent et arrivent sur le même élément. Voir <a href="view_addnew.html">ici</a> pour plus d'informations.</p>
 
     <br/>
 
-	<h2>ARM</h2>
+	<h2>GAR</h2>
 
-	<p class="caption"><img src="../Images/prefs_connections2.png"/><br/>ARM Preferences</p>
+	<p class="caption"><img src="../Images/prefs_connections2.png"/><br/>Préférences des GAR</p>
 	
 	<br/>
 
-	<h3>Automatic Relationship Management</h3>
-	<p>For more information see <a href="view_container_nested.html">Container Elements and Nested Element Relationships</a>.</p>
+	<h3>Gestion automatique des relations</h3>
+	<p>Pour plus d'informations, voir <a href="view_container_nested.html">Éléments conteneurs et relations des éléments imbriqués</a>.</p>
 	
-	<p><strong>Enable implicit connections in Views for nested elements</strong><br/>
-	If this is enabled then nested parent/child elements are considered to have an implicit connection in a View representing a relationship between the elements in the model.</p>
+	<p><strong>Active les connexions implicites dans les vues pour les éléments imbriqués</strong><br/>
+  Si ceci est activé, alors les éléments imbriqués parent/enfants seront considérés comme ayant une connexion implicite dans une vue représentant une relation entre les éléments du modèle.</p>
 
-	<p><strong>Offer to create new relation when creating new element from Palette</strong><br/>
-	If this is enabled then when a new element is added from the Palette onto a  parent element in the View a dialog appears offering to create a new relationship between the parent and child elements.</p>
+	<p><strong>Proposer la création d'une nouvelle relation quand on crée un nouvel élément depuis la palette</strong><br/>
+  Si ceci est activé, quand un nouvel élément est ajouté à partir de la palette dans un élément parent dans la vue, un dialogue apparaît et propose de créer une nouvelle relation entre les éléments parent et enfant.</p>
 
-	<p><strong>Offer to create new relation when adding element from Model Tree</strong><br/>
-	If this is enabled then when a new element is added from the Model Tree onto a parent element in the View a dialog appears offering to create a new relationship between the parent and child elements if one does not already exist.</p>
+	<p><strong>Proposer de créer une nouvelle relation quand on ajouter un élément à partir de l'arborescence des modèles</strong><br/>
+  Si ceci est activé, quand un nouvel élément est ajouté depuis l'arborescence des modèles dans un élément parent dans la vue, un dialogue apparaît pour créer une nouvelle relation entre les éléments parent et enfant s'il n'en existe pas déjà une.</p>
 
-	<p><strong>Offer to create new relation when moving an element to a new parent element</strong><br/>
-	If this is enabled then when an element in a View is dragged onto a parent element in the View a dialog appears offering to create a new relationship between the parent and child elements if one does not already exist.</p>
+	<p><strong>Proposer de créer une nouvelle relation quand on déplace un élement sur un nouvel élément parent</strong><br/>
+  Si ceci est activé, quand un élément de la vue est glissé-déposé  sur un élément parent dans la vue, un dialogue apparaît pour proposer de créer une nouvelle relation entre les éléments parent et enfant s'il n'en existe pas déjà une.</p>
 
-	<p><strong>Relation types offered when creating new relations</strong><br/>
-	Select the types of relationship that will be offered when new implicit connections are created between parent and child elements in a View. The default is Composition, Aggregation and Assignment types.</p>
+	<p><strong>Types de relation proposés à la création de nouvelles relations</strong><br/>
+  Choisir les types de relation qui seront proposées quand de nouvelles connexions implicites sont créées entre des éléments parent et enfant dans une vue. Par défaut, ce sont les types Composition, Agrégation et Affectation.</p>
 
-	<p><strong>Relation types to hide when elements are nested</strong><br/>
-	Select the types of relationship connection that will be hidden in a View when there are nested parent and child elements. The default is Composition, Aggregation and Assignment types.</p>
+	<p><strong>Types de relation à masquer quand des éléments sont imbriqués</strong><br/>
+  Choisir les types des connexions de relation qui seront masqués dans une vue quand il y a des éléments parent et enfant imbriqués. Par défaut, ce sont les types Composition, Agrégation et Affectation.</p>
 
 	<p>&nbsp;</p>
 
