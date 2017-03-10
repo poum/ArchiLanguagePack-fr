@@ -4,90 +4,92 @@
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<title>User Properties</title>
+<title>Propriétés utilisateur</title>
 <link href="../Styles/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 
-    <h2>User Properties</h2>
-    
-    <p>User Properties can be created and managed from the "Properties" tab in the <a href="properties_window.html">Properties Window</a>.</p>
+    <h2>Propriétés de utilisateur</h2>
+
+    <p>Les propriétés utiilisateur peuvent être créées depuis l'onglet "Propriétés" de la <a href="properties_window.html">fenêtre des propriétés</a>.</p>
     
     <br/>
     
-    <p class="font12"><strong>The Properties Tab</strong></p>
+    <p class="font12"><strong>L'onglet propriétés</strong></p>
     
     <img src="../Images/properties_user1.png"/>
-    <p class="caption">User Properties</p>
+    <p class="caption">Propriétés utilisateur</p>
+   
+    <p>Cet onglet vous permet d'ajouter des propriétés utilisateur de votre choix, ou des attributs à un élément, un modèle, un dossier ou une vue. Par exemple, vous pourriez souhaiter
+ajouter des informations telles que "Coût", "Localisation", "Durée", "Temps", "Lien", et ainsi de suite. Les propriétés sont enregistrées sous forme de paires clef/valeur. Les propriétés qui
+ont le même nom peuvent apparaître plus d'une fois dans le modèle ou l'élément et les valeurs sont saisies sous forme de texte libre. Si la valeur d'une propriété commence par "http://", "https://" ou "ftp://", elle sera affichée en bleu pour signaler qu'il s'agit d'un lien. En double-cliquant sur la partie gauche de la ligne du tableau ouvrira ce lien dans un navigateur.</p>
     
-    <p>This tab allows you to add arbitrary User Properties, or attributes, to an Element, Model, Folder, or View. For example you may wish to add information such as "Cost", "Location", "Duration", "Time", "Link" and so on. Properties are stored as name/value pairs. Properties with the same name may appear more than once in the model or element and values are free text. If the value of a Property starts with "http://", "https://" or "ftp://" it will show in blue to denote a hyperlink. Double-clicking on the left part of the table row will open the link in a Browser.</p>
-    
-    <p><strong>To Add a New User Property entry:</strong></p>
+    <p><strong>Ajouter une nouvelle entrée de propriété utilisateur:</strong></p>
     
     <ol>
-      <li>Click on the "New" toolbar button to the right of the Properties table, or select "New" from the right-click menu, or double-click in an empty area on the table</li>
-      <li>Edit the Property's Name in the table cell. If there are existing Properties used elsewhere in the Model you can select one of these instead from the combo box in the cell editor<br/>
+      <li>Cliquez sur le bouton "Nouveau" de la barre d'outils à droite du tableau des propriétés ou sélectionez "Nouveau" dans le menu contextuel, ou encore double-cliquez dans une zone vide du tabeau</li>
+      <li>Modifiez le nom de la propriété dans la cellule du tableau. S'il existe déjà une propriété utilisée quelque part ailleurs dans le modèle, vous pourrez sélectionner l'une d'elles à la place depuis la liste déroulante dans l'éditeur de la cellule.<br/>
         <br/>
         <img src="../Images/properties_user2.png"/><br/>
         <br/>
       </li>
-      <li>Edit the Property's value in the "Value" Cell</li>
+      <li>Modifiez la valeur de la propriété dans la cellule "Valeur"</li>
     </ol>
-    
-    <p><strong>To Change an Existing User Property Name to a New or Existing Name:</strong></p>
+   
+    <p><strong>Pour modifier le nom d'une propriété utilisateur existante en un nouveau nom ou un nom existant:</strong></p> 
     
     <ol>
-      <li>Click on the Property Name cell in the Properties table and type in the new name</li>
-      <li>If there are existing Properties used elsewhere in the Model you can select one of these instead from the combo box in the cell editor</li>
+      <li>Cliquez sur la cellule du nom de la propriété dans le tableau des propriétés et saisissez-y le nouveau nom</li> 
+      <li>S'il existe des propriétés existantes utilisées ailleurs dans le modèle, vous pouvez alternativement en sélectionner une dans la liste déroulante de l'éditeur de la cellule</li>
     </ol>
-    <p><strong>To Remove a Property Entry:</strong></p>
+    <p><strong>Pour supprimer une entrée de propriété:</strong></p>
     <ol>
-      <li>Select the Property entry or entries you wish to remove</li>
-      <li>Click on the "Remove" toolbar button to the right of the Properties table, or select "Remove" from the right-click menu</li>
-    </ol>
-    
-    <p class="boxout"><strong>Note:</strong> Adding a new Property to an Element in the Properties window means that it becomes available as a re-usable Property  for  all elements in the same model that have User Properties. Removing a Property in the Properties window only removes it from the selected Element. If it is used in other Elements it is still available.</p>
-    
-    <p><strong>To Re-order Property Entries by Drag and Drop:</strong></p>
-    
-    <ol>
-      <li>Select the Property entry or entries in the Properties table you wish to re-order</li>
-      <li>Drag and Drop the entries in the in the Properties table to re-arrange them</li>
-    </ol>
-    <p><strong>To Sort the Property Names:</strong></p>
-    <ol>
-      <li>Click on the "Name" table column header</li>
-      <li>The Property Names will be sorted alphabetically</li>
-    </ol>
-    <p><strong>To Add a Hyperlink Property Entry:</strong></p>
-    <ol>
-      <li>Select the Property entry in the Properties table you wish to use as a hyperlink</li>
-      <li>Edit the value so that it contains a URL that starts with "http://", "https://" or "ftp://"</li>
-      <li>Double-click the the left part of the Property row to open the link in a Browser</li>
+      <li>Choisissez l'entrée de propriété que vous souhaitez supprimer</li>
+      <li>Cliquez sur le bouton "Supprimer" de la barre d'outils à droite du tableau des propriétés ou choisissez "Supprimer" via le menu contextuel</li>
     </ol>
     
-    <p><strong>To Add  New Property Entries using Existing Property Names:</strong></p>
+    <p class="boxout"><strong>Note:</strong> Ajouter une nouvelle propriété à un élément dans la fenêtre des propriétés signifie que celle-ci devient une propriété disponible et ré-utilisable pour tous les éléments appartenant au même modèle qui possèdent des propriétés utilisateur. Supprimer une propriété dans la fenêtre des propriétés ne la supprime que pour l'élément sélectionné. Si elle est utilisée dans d'autres éléments, elle y est toujours disponible.</p>
+   
+    <p><strong>Pour réarranger les entrées des propriétés par glisser-déposer;</strong></p> 
     
     <ol>
-      <li>Click on the "New Multiple..." toolbar button to the right of the Properties table, or select "New Multiple..." from the right-click menu</li>
+      <li>Choisissez l'entrée de propriété ou les entrées dans le tableau des propriétés que vous voulez réarranger</li>
+      <li>Glissez-déposez les entrées dans le tableau des propriétés pour les réordonner</li>
+    </ol>
+    <p><strong>Pour trier les noms des propriétés:</strong></p>
+    <ol>
+      <li>Cliquez sur le titre de colonne "Nom" du tableau</li>
+      <li>Les noms des propriétés seront triés alphabétiqyement</li>
+    </ol>
+    <p><strong>Pour ajouter une entrée de propriété lien hypertexte:</strong></p>
+    <ol>
+      <li>Choisissez l'entrée de propriété dans le tableau des propriétés que vous voulez utiliser en tant que lien hypertexte</li>
+      <li>Modifiez la valeur de telle façon qu'elle contiennent une URL qui commence par "http://", "https://" ou "ftp://"</li>
+      <li>Double-cliquez sur la partie gauche de la ligne des propriétés pour ouvrir le lien dans u navigateur</li>
+    </ol>
+   
+    <p><strong>Ajouter de nouvelles propriétés d'entrées en utilisant des nos de propriété existant</strong></p> 
+    
+    <ol>
+      <li>Cliquez sur le bouton de la barre d'outils "Nouveaux multiples..." à droite dy tableau des propriétés ou bien choisissez "Multiples nouveau..." dans le menu contextuel</li>
       <li>Select the Properties you wish to add from the dialog<br/>
         <br/>
         <img src="../Images/properties_user_dialog1.png"/><br/>
         <br/>
       </li>
-      <li>Press OK and then edit the new Values in the Properties table</li>
+      <li>Appuyez sur OK puis modifiez les nouvelles valeurs dans le tableau des propriétés</li>
     </ol>
-    <p><strong>To Manage and View User Properties Globally:</strong></p>
+    <p><strong>Pour gérer et consulter globalement les propriétés utilisateur:</strong></p>
     <ol>
-      <li>Click on the "Manage" toolbar button to the right of the Properties table, or select "Manage" from the right-click menu</li>
-      <li>The "Properties Manager" dialog appears showing all used Property keys in the Model globally and the number of times they have been used:<br/>
+      <li>Cliquez sur le bouton "Gérer" de la barre d'outils à droite du tableau des propriétés ou choisisse "Gérer" via le menu contextuel</li>
+      <li>La boîte de dialogue "Gestionnaire des propriétés apparaît en affichant toutes les propriétés utilisateur globalement dans le modèle ainsi que le nombre de fois qu'elles ont été utilisées:<br/>
         <br/>
         <img src="../Images/properties_user_dialog2.png"/><br/>
         <br/>
       </li>
-      <li>You can Delete Properties here. All occurrences of the Property  and its declared Values will be deleted from all Elements that use it</li>
-      <li>You can Rename Properties by editing the name in the "New Name" column. All occurrences of the Property Name will be renamed in all Elements that use it<br/>
+      <li>Vous pouvez supprimer ici des propriétés: toutes les occurences de la propriété et ses valeurs sélectionnées seront supprimées de tous les éléments qui les utilisent</li>
+      <li>Vous pouvez renommer des propriétés en modifiant le nomm dans la colonne "Nouveau nom". Toutes les occurences du nom de la propriété seront renommés pour tous les éléments qui les utilisent</br/>
       </li>
     </ol>
     
